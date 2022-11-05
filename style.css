@@ -1,0 +1,41 @@
+body {
+    background: rgb(22, 4, 4);
+    color: rgb(240, 240, 240);
+    font-family: 'Fira Sans', sans-serif;
+}
+
+button {
+    border: none;
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+    background:#844d4d;
+    color: white;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 1rem;
+}
+
+#list-container {
+    width: fit-content;
+}
+
+button:hover {
+    background:rgb(91, 51, 51);
+    cursor: pointer;
+}
+
+ul {
+    width: fit-content;
+    display: inline;
+}
+
+li {
+    padding: 0.25rem;
+}
+
+li:nth-child(odd) {
+    background-color: rgb(91, 29, 29);
+}
+
+li:nth-child(even) {
+    background-color: rgb(60, 1, 1);
+}
