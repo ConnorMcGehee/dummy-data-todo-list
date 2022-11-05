@@ -17,10 +17,18 @@
     <button onclick="fetchTodos()">Fetch To-Dos</button>
     <button onclick="logTodos()">Console Log To-Dos</button>
     <button onclick="populateTodos()">Populate To-Dos</button>
+    <div class="filter-row">
+        <label for="userId">User ID</label>
+        <input type="number" name="userId" id="userId" min="1" max="10" value="1"><br>
+        <button onclick="filterTodosUserId()">Filter To-Dos</button>
+    </div>
     <div id="list-container">
-        <ol id="todo-list">
-            <!-- LIs will go here -->
-        </ol>
+        <h3 id="td-head">To-Dos</h3>
+        <ol id="todo-list"></ol>
+        <h3 id="com-head">Complete</h3>
+        <ol id="completed-list"></ol>
+        <h3 id="inc-head">Incomplete</h3>
+        <ol id="incomplete-list"></ol>
     </div>
 </body>
 
