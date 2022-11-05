@@ -16,6 +16,34 @@ button {
 
 #list-container {
     width: fit-content;
+    display: grid;
+    grid-template-areas: "td-head com-head inc-head"
+    "todos completed incomplete";
+    column-gap: 1rem;
+}
+
+#td-head {
+    grid-area: td-head;
+}
+
+#todo-list {
+    grid-area: todos;
+}
+
+#com-head {
+    grid-area: com-head;
+}
+
+#completed-list {
+    grid-area: completed;
+}
+
+#inc-head {
+    grid-area: inc-head;
+}
+
+#incomplete-list {
+    grid-area: incomplete;
 }
 
 button:hover {
